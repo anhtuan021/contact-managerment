@@ -7,7 +7,6 @@ export default function EditContact() {
   const router = useRouter();
   const { id } = router.query;
 
-  // ✅ dùng FrontendContact thay vì IContact
   const [initial, setInitial] = useState<FrontendContact | null>(null);
 
   useEffect(() => {
@@ -18,7 +17,7 @@ export default function EditContact() {
     }
   }, [id]);
 
-  // ✅ dùng ContactFormData
+
   const handleUpdate = async (data: ContactFormData) => {
     const res = await fetch(`/api/contacts/${id}`, {
       method: 'PUT',
@@ -42,8 +41,8 @@ export default function EditContact() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        minHeight: "100vh",         // ⚡ quan trọng nhất
-        background: "#fafbfd",      // hoặc màu nền nhẹ
+        minHeight: "100vh",         
+        background: "#fafbfd",    
       }}
     >
     <div style={{ padding: 24 }}>

@@ -25,8 +25,8 @@ export default function CreateContact() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        minHeight: "100vh",         // ⚡ quan trọng nhất
-        background: "#fafbfd",      // hoặc màu nền nhẹ
+        minHeight: "100vh",         
+        background: "#fafbfd",    
       }}
     >
     <div style={{ padding: 24 }}>
